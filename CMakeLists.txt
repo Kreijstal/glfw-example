@@ -12,6 +12,7 @@ option(USE_ANGLE "Use ANGLE for rendering (Windows only)" ON)
 # --- Find GLFW ---
 
 find_package(glfw3 3.3 REQUIRED)
+set(GLFW_INCLUDE_ES3 ON)
 
 # --- Find Python 3 ---
 
@@ -69,8 +70,6 @@ if(GENERATE_GLAD)
     message(FATAL_ERROR "glad module not found. Please install it using pip (pip install glad).")
   endif()
 endif()
-
-# --- Rest of your CMakeLists.txt (find_package, add_executable, etc.) ---
 
 # --- Check for ANGLE (Windows only) ---
 

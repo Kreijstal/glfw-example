@@ -16,7 +16,6 @@
 #define GL_APICALL
 #endif
 
-#include "glad/gles2.h"
 
 // Function to load shader source from a file
 std::string loadShaderSource(const std::string& filePath) {

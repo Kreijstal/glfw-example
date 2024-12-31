@@ -7,7 +7,7 @@ This project demonstrates a simple OpenGL ES application that renders a red circ
 You can install all the required dependencies using a single command within the MSYS2 environment (make sure you're in a MinGW-w64 shell, e.g., UCRT64 or CLANG64):
 
 ```bash
-pacman -S mingw-w64-x86_64-{cmake,glfw,angleproject,python-glad,cc} git
+pacman -S mingw-w64-x86_64-{cmake,glfw,angleproject,python-glad,cc} git --needed
 ```
 
 ## Building the Project
